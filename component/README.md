@@ -4,7 +4,7 @@ sudo docker save -o mysql_5.7.tar mysql:5.7
 ```
 ## Save all dockers from a docker-compose files
 ```
-sudo docker save -o mysql_5.7.tar mysql:5.7
+sudo python3 ExportImages.py
 ```
 
 ## Spilt saved docker
@@ -27,6 +27,6 @@ sudo docker tag <Image-ID> oai-gnb:latest # May not be needed
 ## Recombine and load all dockers
 ```
 bash mergeAndCreate.sh
-bash reduceSpace.sh
+bash reduceSpace.sh # Removes tar files but keeps the splited images
 ```
 
