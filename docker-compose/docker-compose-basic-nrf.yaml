@@ -393,7 +393,7 @@ services:
             public_net:
                 ipv4_address: 192.168.70.135
     oai-speedtest:
-        image: openspeedtest/latest
+        image: openspeedtest:latest
         environment:
             - HTTP_PROXY=http://172.27.10.67:3128/
             - HTTPS_PROXY=http://172.27.10.67:3128/

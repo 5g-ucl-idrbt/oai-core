@@ -1,9 +1,12 @@
-## Save the dockers
+## Save one docker
 ```
-sudo docker save -o ran-base_20.tar ran-base:20
-sudo docker save -o ran-build_20.tar ran-build:20
-sudo docker save -o oai-gnb_20.tar oai-gnb:latest
+sudo docker save -o mysql_5.7.tar mysql:5.7
 ```
+## Save all dockers from a docker-compose files
+```
+sudo docker save -o mysql_5.7.tar mysql:5.7
+```
+
 ## Spilt saved docker
 ```
 split --verbose -b99M oai-gnb_latest.tar oai-gnb_latest.tar.

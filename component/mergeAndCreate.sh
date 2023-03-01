@@ -9,10 +9,3 @@ for dir in "${COMPONENTS[@]}"; do
 	cat $TARGET_FILE.a? > $TARGET_FILE
 	sudo docker load --input $TARGET_FILE
 done
-
-
-
-
-#sudo docker load --input oai-gnb_latest_18.tar
-#sudo docker tag <Image-ID> oai-gnb:latest
-
