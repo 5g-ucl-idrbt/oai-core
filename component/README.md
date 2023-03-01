@@ -4,17 +4,26 @@ sudo docker save -o ran-base_20.tar ran-base:20
 sudo docker save -o ran-build_20.tar ran-build:20
 sudo docker save -o oai-gnb_20.tar oai-gnb:latest
 ```
-## Spilt a file
+## Spilt saved docker
 ```
 split --verbose -b99M oai-gnb_latest.tar oai-gnb_latest.tar.
 ```
-## Recombine
+## Spilt all saved dockers
+```
+bash split.sh
+```
+## Recombine one docker
 ```
 cat oai-gnb_latest.tar.a? > oai-gnb_latest_18.tar
 ```
 ## Create Docker image
 ```
 sudo docker load --input oai-gnb_latest_18.tar
-sudo docker tag <Image-ID> oai-gnb:latest
+sudo docker tag <Image-ID> oai-gnb:latest # May not be needed
+```
+## Recombine and load all dockers
+```
+bash mergeAndCreate.sh
+bash reduceSpace.sh
 ```
 
