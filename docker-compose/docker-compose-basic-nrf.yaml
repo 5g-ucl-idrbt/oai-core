@@ -7,7 +7,7 @@ services:
             - ./database/oai_db3.sql:/docker-entrypoint-initdb.d/oai_db.sql
             - ./healthscripts/mysql-healthcheck2.sh:/tmp/mysql-healthcheck.sh
         environment:
-            - TZ=Europe/Paris
+            - TZ=Asia/India
             - MYSQL_DATABASE=oai_db
             - MYSQL_USER=test
             - MYSQL_PASSWORD=test
@@ -26,7 +26,7 @@ services:
         container_name: "oai-udr"
         image: oai-udr:v1.4.0
         environment:
-            - TZ=Europe/Paris
+            - TZ=Asia/India
             - INSTANCE=0
             - PID_DIRECTORY=/var/run
             - UDR_NAME=OAI_UDR
@@ -66,7 +66,7 @@ services:
         container_name: "oai-udm"
         image: oai-udm:v1.4.0
         environment:
-            - TZ=Europe/Paris
+            - TZ=Asia/India
             - INSTANCE=0
             - PID_DIRECTORY=/var/run
             - UDM_NAME=OAI_UDM
@@ -103,7 +103,7 @@ services:
         container_name: "oai-ausf"
         image: oai-ausf:v1.4.0
         environment:
-            - TZ=Europe/Paris
+            - TZ=Asia/India
             - INSTANCE_ID=0
             - PID_DIR=/var/run
             - AUSF_NAME=OAI_AUSF
@@ -139,7 +139,7 @@ services:
         container_name: "oai-nrf"
         image: oai-nrf:v1.4.0
         environment:
-            - TZ=Europe/Paris
+            - TZ=Asia/India
             - NRF_INTERFACE_NAME_FOR_SBI=eth0
             - NRF_INTERFACE_PORT_FOR_SBI=80
             - NRF_INTERFACE_HTTP2_PORT_FOR_SBI=8080
@@ -162,7 +162,7 @@ services:
         container_name: "oai-amf"
         image: oai-amf:v1.4.0
         environment:
-            - TZ=Europe/paris
+            - TZ=Asia/India
             - INSTANCE=0
             - PID_DIRECTORY=/var/run
             - MCC=001
@@ -243,7 +243,7 @@ services:
         container_name: "oai-smf"
         image: oai-smf:v1.4.0
         environment:
-            - TZ=Europe/Paris
+            - TZ=Asia/India
             - INSTANCE=0
             - PID_DIRECTORY=/var/run
             - SMF_INTERFACE_NAME_FOR_N4=eth0
@@ -319,7 +319,7 @@ services:
         container_name: "oai-spgwu"
         image: oai-spgwu-tiny:v1.4.0
         environment:
-            - TZ=Europe/Paris
+            - TZ=Asia/India
             - PID_DIRECTORY=/var/run
             - SGW_INTERFACE_NAME_FOR_S1U_S12_S4_UP=eth0
             - SGW_INTERFACE_NAME_FOR_SX=eth0

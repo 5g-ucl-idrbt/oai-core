@@ -33,6 +33,11 @@ We have used the following [Tutorial](https://www.digitalocean.com/community/tut
 		sudo iptables -P FORWARD ACCEPT
 		sudo ip route add 192.168.71.194 via <GNB IP>
 		```
+		OR
+		```
+		sudo /sbin/iptables-restore < Utils/iptables.rules.v4
+		sudo /sbin/ip6tables-restore < Utils/iptables.rules.v6
+		```
 	1. Check routing tables of `GNB Docker`, `GNB Baremetal`, `Core VM`, `Core Baremetal`
 ## Execute with `docker compose`
 Edit `docker-compose-basic-nrf.yaml` and modify the following variables:
