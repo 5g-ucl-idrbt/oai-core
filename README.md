@@ -2,7 +2,7 @@
 ## Description
 The target [Architectural diagram](https://app.diagrams.net/#G1q0MFS9GiIhezv8m8cm3Iom4RxhzoIJfL) has two parts. (a) Virtualized 5G Core and (b) gNB docker[^1]. This tutorial is about how to create Virtualized 5G Core VM. We have used Intel Core i7 systems along with Ettus B210. We have used Ubuntu 20.04 and we suggest use of same OS.
 
-[^1] For gNB docker use [this](https://github.com/subhrendu1987/oai-gnodeb) repository.
+[^1]: For gNB docker use [this](https://github.com/subhrendu1987/oai-gnodeb) repository.
 ## VM Preparation
 * Install Oracle Virtual Box and extension pack. In this case we have used 6.1.38.
 * Instantiate an Ubuntu 20.04 VM with 4vCPUs, 4GB RAM, and bridged network adapter. For simplicity we are calling this instance as `Core VM` and the physical system as `Core Baremetal`
