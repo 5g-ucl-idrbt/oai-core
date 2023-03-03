@@ -1,6 +1,6 @@
-version: '3.8'
+version: '3.3'
 services:
-    mysql:
+    streaming:
         container_name: "rtmp-streaming"
         image: rtmp-hls:latest
         environment:
@@ -10,28 +10,5 @@ services:
         ports:
             - '1935:1935'
             - '9080:8080'
-        networks:
-            public_net:
-                ipv4_address: 192.168.72.141
-    oai-test:
-        image: ubuntu:testoai
-        container_name: oai-test
-        stdin_open: true 
-        tty: true
-        networks:
-            public_net:
-                ipv4_address: 192.168.70.160
-
-
-networks:
-    # public_net:
-    #     external:
-    #         name: demo-oai-public-net
-    public_net:
-        driver: bridge
-        name: demo-edge-public-net
-        ipam:
-            config:
-                - subnet: 192.168.72.128/26
-        driver_opts:
-            com.docker.network.bridge.name: "edge-oai"
+        volumes:
+            - ./players:/usr/local/nginx/html/players
