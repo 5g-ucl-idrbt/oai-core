@@ -32,7 +32,7 @@ We have used the following [Tutorial](https://www.digitalocean.com/community/tut
 ### Import dockers oai-core
 	Change directory to `component`. Now follow the steps as follows. The commands related to the steps are given in  `component/README.md` file.
 	1. First `Recombine and load all dockers`
-	1. `cd ../docker-compose`
+	2. `cd ../docker-compose`
 ### Routing table adjustments
 1. ping test from `GNB` to `AMF` and `AMF` to `GNB`. If ping is not successfull, then try to debug
 	1. Commands to be executed in Core to enable packet forwarding from GnodeB to the external network via the `Core VM`
