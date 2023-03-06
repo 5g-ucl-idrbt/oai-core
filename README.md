@@ -41,10 +41,10 @@ We have used the following [Tutorial](https://www.digitalocean.com/community/tut
 	1. Check routing tables of `GNB Docker`, `GNB Baremetal`, `Core VM`, `Core Baremetal`
 ## Execute with `docker compose`
 Edit `docker-compose-basic-nrf.yaml` and modify the following variables:
-	1. Remove all occurences of `HTTP_PROXY` and `HTTPS_PROXY` if you are not in a proxy based environment
-	1. Go to the service descriptions of `oai-amf` and fill up the appropriate values
-	1. Provide same `MCC` and `MNC` in the service descriptions of `oai-spgwu`
-	1. Search for the comments (i.e. #) to identify the values which might require adjustments
+1. Remove all occurences of `HTTP_PROXY` and `HTTPS_PROXY` if you are not in a proxy based environment
+1. Go to the service descriptions of `oai-amf` and fill up the appropriate values
+1. Provide same `MCC` and `MNC` in the service descriptions of `oai-spgwu`
+1. Search for the comments (i.e. #) to identify the values which might require adjustments
 
 ### Start service
 	`sudo docker compose -f docker-compose-basic-nrf.yaml up -d`
