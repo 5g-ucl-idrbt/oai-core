@@ -26,7 +26,7 @@ We have used the following [Tutorial](https://www.digitalocean.com/community/tut
 	Change directory to `component`. Now follow the steps as follows. The commands related to the steps are given in  `component/README.md` file.
 	1. First `Recombine and load all dockers`
 	2. `cd ../docker-compose`
-	3. Make healthscripts and entrypoint scripts executable i.e. 
+	3. Permit all shell scripts to execute i.e. 
 	`find ./ -type f -print |grep ".sh"|xargs sudo chmod -v 777`
 ### Routing table adjustments
 1. ping test from `GNB` to `AMF` and `AMF` to `GNB`. If ping is not successfull, then try to debug
