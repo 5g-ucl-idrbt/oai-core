@@ -37,6 +37,8 @@ We have used the following [Tutorial](https://www.digitalocean.com/community/tut
 		sudo ip route add 192.168.71.194 via <GNB IP>
 		```
 	1. Check routing tables of `GNB Docker`, `GNB Baremetal`, `Core VM`, `Core Baremetal`
+	2. For ease of operations use the Google sheet [tool](https://docs.google.com/spreadsheets/d/1n9lvu_eg6hOtkR9DOmAPyxP7QXRWBrLoCCP3OOhmwyw/edit#gid=0)
+
 ## Execute with `docker compose`
 Edit `docker-compose-basic-nrf.yaml` and modify the following variables:
 1. Remove all occurences of `HTTP_PROXY` and `HTTPS_PROXY` if you are not in a proxy based environment
