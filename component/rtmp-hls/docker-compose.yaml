@@ -7,7 +7,6 @@ services:
             - TZ=Asia/India
             - HTTP_PROXY=${http_proxy}
             - HTTPS_PROXY=${http_proxy}
-            - temp=${temp}
         ports:
             - '1935:1935'
             - '9080:8080'
