@@ -4,7 +4,6 @@
 ## Add an online stream
 * `rtmp://<server ip>:1935/live/<stream_key>`
 * Default stream key is `test`. e.g. `rtmp://<server ip>:1935/live/test`
-```
 ## View stream
 ### With VLC
 * Go to Media > Open Network Stream.
