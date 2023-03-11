@@ -117,15 +117,10 @@ a {
   </head>
   <body class="bg-light">
     	<header class="header">
-		<h1 class="logo"><a href="#">Flexbox</a></h1>
-      <!--ul class="main-nav">
-          <li><a href="./index.html">Quality selector</a></li>
-          <li><a href="./index2.html">Quality selector 2</a></li>
-          <li><a href="./index3.html">Load url</a></li>
-          <li><a href="./index4.html">Playlist</a></li>
-        <li><a href="./index5.html">Dynamic player</a></li>
-      </ul-->
-	</header> 
+			<img src="logos/5gucl.png" alt="5G-UCL" style="height:100px">
+			<img src="logos/IDRBT.png" alt="IDRBT" style="height:100px">
+			<img src="logos/NIL.png" alt="NIL" style="height:100px">
+		</header> 
 
     <div class="container">
         <div class="my-5 embed-responsive embed-responsive-16by9">
@@ -144,7 +139,8 @@ a {
         player.qualityPickerPlugin();
         
         player.src({
-            src: 'http://127.0.0.1:8080/hls/test.m3u8',
+            src:'/hls/test.m3u8',
+            //src: 'http://127.0.0.1:8080/hls/test.m3u8',
             type: 'application/x-mpegURL'
         });
 
