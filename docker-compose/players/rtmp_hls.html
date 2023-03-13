@@ -10,17 +10,30 @@
 
 	</head>
 	<body>  
-
-		<h1>RTMP Player</h1>
-		<video id="rtmp_video" class="video-js vjs-default-skin" controls preload="auto" width="720" 
-			data-setup='{"techOrder": ["html5","flash"]}'>
-			<source src="rtmp://127.0.0.1:1935/live/test" type="rtmp/mp4">
-		</video>
-
-		<h1>HLS Player</h1>
-		<video id="hls_video" class="video-js vjs-default-skin" controls preload="auto" width="720" 
-			data-setup='{"techOrder": ["html5","flash"]}'>
-			<source src="http://127.0.0.1:8080/hls/test.m3u8" type="application/x-mpegURL">
-		</video>
+		<center>
+		  <header class="header">
+				<img align="left" src="logos/5gucl.png" alt="5G-UCL" style="height:75px">
+				<img align="middle" src="logos/IDRBT.png" alt="IDRBT" style="height:50px">
+				<img align="right" src="logos/NIL.png" alt="NIL" style="height:75px">
+			</header>
+		    Stream ID: <input type="text" id="streamid" value="test"> | 
+		    <button type="button" onclick="changeStream()">Change Stream</button>
+		    <table><tr>
+		    	<td>
+					<center><h1>RTMP Player</h1></center>
+					<video id="rtmp_video" class="video-js vjs-default-skin" controls preload="auto" width="720" 
+						data-setup='{"techOrder": ["html5","flash"]}'>
+						<source src="rtmp://127.0.0.1:1935/live/test" type="rtmp/mp4">
+					</video>
+				</td>
+				<td>
+					<center><h1>HLS Player</h1></center>
+					<video id="hls_video" class="video-js vjs-default-skin" controls preload="auto" width="720" 
+						data-setup='{"techOrder": ["html5","flash"]}'>
+						<source src="http://127.0.0.1:9080/hls/test.m3u8" type="application/x-mpegURL">
+					</video>
+				</td>
+			</tr></table>
+		</center>
 	</body>
 </html>
