@@ -11,13 +11,14 @@
     <link rel="stylesheet" href="css/hls.css">
   </head>
   <body onload="changeStream()" class="bg-light">
-	<header class="header"><center>
+	<center>
+  <header class="header">
 		<img align="left" src="logos/5gucl.png" alt="5G-UCL" style="height:75px">
 		<img align="middle" src="logos/IDRBT.png" alt="IDRBT" style="height:50px">
 		<img align="right" src="logos/NIL.png" alt="NIL" style="height:75px">
-	</center></header>
-    <center>Stream ID: <input type="text" id="streamid" value="test"> | 
-    <button type="button" onclick="changeStream()">Change Stream</button></center>
+	</header>
+    Stream ID: <input type="text" id="streamid" value="test"> | 
+    <button type="button" onclick="changeStream()">Change Stream</button>
     <script>
     function changeStream() {
       document.getElementById("streamid").defaultValue = "test";
@@ -27,7 +28,7 @@
       player.qualityPickerPlugin();
       player.src({
         src:'/hls/'+streamID+'.m3u8',
-        //src: 'http://127.0.0.1:8080/hls/test.m3u8',
+        //src: '/hls/test.m3u8',
         type: 'application/x-mpegURL'
       });
       player.play();
@@ -46,9 +47,7 @@
     <!-- https://github.com/streamroot/videojs-hlsjs-plugin -->
     <script src="js/vjs-quality-picker.js?v=v0.0.2"></script>
     <!-- https://github.com/streamroot/videojs-quality-picker -->
-    <script>
-
-    </script>
+    </center>
   </body>
 </html>
 
