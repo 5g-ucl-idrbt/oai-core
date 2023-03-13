@@ -40,6 +40,7 @@ We have used the following [Tutorial](https://www.digitalocean.com/community/tut
 		sudo sysctl net.ipv4.ip_forward=1
 		sudo iptables -P FORWARD ACCEPT
 		sudo ip route add 192.168.71.194 via <GNB IP>
+		sudo ip route add 12.1.1.0/24 via 192.168.70.134 # Forward packets to Mobiles from external sources
 		```
 	1. Check routing tables of `GNB Docker`, `GNB Baremetal`, `Core VM`, `Core Baremetal`
 	2. For ease of operations use the Google sheet [tool](https://docs.google.com/spreadsheets/d/1n9lvu_eg6hOtkR9DOmAPyxP7QXRWBrLoCCP3OOhmwyw/edit#gid=0)
