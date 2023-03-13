@@ -11,4 +11,4 @@ services:
             - '1935:1935'
             - '9080:8080'
         volumes:
-            - ./players:/usr/local/nginx/html/players
+            - ../../docker-compose/players/:/usr/local/nginx/html/players
