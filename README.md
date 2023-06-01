@@ -58,7 +58,7 @@ Edit `docker-compose-basic-nrf.yaml` and modify the following variables:
 ### Stop core services
 	`sudo python3 core-network.py --type stop-basic`
 ### Test and debug
-1. `sudo docker --logs follow oai-amf`
+1. `sudo docker logs --follow oai-amf`
 ### Execute GnodeB
 If everything is ok, then in `oai-amf` will be able to reflect the registered gnodeB name and ID.
 ### Sim registration
