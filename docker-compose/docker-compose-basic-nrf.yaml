@@ -418,7 +418,9 @@ services:
     streaming:
         container_name: "rtmp-streaming"
         image: rtmp-hls:latest
-        cpuset: '3'
+        mem_limit: "1g"
+        mem_reservation: "512m"
+        cpus: "2"
         environment:
             - TZ=Asia/India
             - HTTP_PROXY=${http_proxy}
