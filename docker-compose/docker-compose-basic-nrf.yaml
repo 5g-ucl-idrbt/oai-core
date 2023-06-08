@@ -418,6 +418,7 @@ services:
     streaming:
         container_name: "rtmp-streaming"
         image: rtmp-hls:latest
+        cpuset: '3'
         environment:
             - TZ=Asia/India
             - HTTP_PROXY=${http_proxy}
